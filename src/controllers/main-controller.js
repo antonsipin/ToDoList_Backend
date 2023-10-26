@@ -4,9 +4,9 @@ const path = require('path');
 const index = async (req, res) => {
 
   try {
-    res.sendFile(path.resolve('../../../frontend/build/index.html'))
+    res.sendFile(path.resolve('../../../client/build/index.html'))
   } catch (err) {
-    res.sendStatus(500)
+    res.status(500)
   }
 }
 
